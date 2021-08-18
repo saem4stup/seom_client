@@ -1,0 +1,174 @@
+{
+  "Nodes": [
+    {
+      "Annotation": "all_tundra_nodes",
+      "Action": "",
+      "Inputs": [],
+      "Outputs": [],
+      "TargetDirectories": [],
+      "PassIndex": 0,
+      "Deps": [
+        1
+      ],
+      "OverwriteOutputs": true,
+      "FrontendResponseFiles": [],
+      "AllowUnexpectedOutput": true,
+      "AllowedOutputSubstrings": [],
+      "DebugActionIndex": 0
+    },
+    {
+      "Annotation": "Il2Cpp E:/Unity Projects/New SEOM/Library/Il2cppBuildCache/UWP/ARM64/il2cppOutput/Data/Metadata/global-metadata.dat",
+      "Action": "\"C:\\Program Files\\Unity\\Hub\\Editor\\2020.3.15f2\\Editor\\Data\\il2cpp/build/deploy/netcoreapp3.1/il2cpp.exe\" --convert-to-cpp --emit-null-checks --enable-array-bounds-check --dotnetprofile=\"unityaot\" --incremental-g-c-time-slice=3 --baselib-directory=\"Temp\\StagingArea\\Il2CppOutputProject\\IL2CPP\\build\\baselib\\ARM64\\Release\" --avoid-dynamic-library-copy --profiler-report --map-file-parser=\"C:/Program Files/Unity/Hub/Editor/2020.3.15f2/Editor/Data/Tools/MapFileParser/MapFileParser.exe\" --directory=\"E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed\" --generatedcppdir=\"E:/Unity Projects/New SEOM/Library/Il2cppBuildCache/UWP/ARM64/il2cppOutput\"",
+      "Inputs": [
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/Assembly-CSharp.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/I18N.CJK.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/I18N.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/I18N.MidEast.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/I18N.Other.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/I18N.Rare.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/I18N.West.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/Microsoft.MixedReality.OpenXR.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/Microsoft.MixedReality.Toolkit.Async.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/Microsoft.MixedReality.Toolkit.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/Microsoft.MixedReality.Toolkit.Gltf.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/Microsoft.MixedReality.Toolkit.Providers.OpenXR.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/Microsoft.MixedReality.Toolkit.Providers.WindowsMixedReality.Shared.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/Microsoft.MixedReality.Toolkit.Providers.WindowsSceneUnderstanding.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/Microsoft.MixedReality.Toolkit.Providers.WindowsVoiceInput.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/Microsoft.MixedReality.Toolkit.Providers.XRSDK.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/Microsoft.MixedReality.Toolkit.Providers.XRSDK.WindowsMixedReality.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/Microsoft.MixedReality.Toolkit.SDK.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/Microsoft.MixedReality.Toolkit.Services.CameraSystem.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/Microsoft.MixedReality.Toolkit.Services.DiagnosticsSystem.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/Microsoft.MixedReality.Toolkit.Services.InputAnimation.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/Microsoft.MixedReality.Toolkit.Services.InputSimulation.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/Microsoft.MixedReality.Toolkit.Services.InputSystem.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/Microsoft.MixedReality.Toolkit.Services.SceneSystem.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/Microsoft.MixedReality.Toolkit.Services.SpatialAwarenessSystem.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/Microsoft.MixedReality.Toolkit.Services.TeleportSystem.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/Mono.Security.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/mscorlib.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/System.Configuration.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/System.Core.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/System.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/System.Numerics.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/System.Numerics.Vectors.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/System.ObjectModel.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/System.Runtime.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/System.Runtime.InteropServices.WindowsRuntime.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/System.Runtime.WindowsRuntime.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/System.Runtime.WindowsRuntime.UI.Xaml.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/System.Xml.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/Unity.InputSystem.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/Unity.Subsystem.Registration.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/Unity.TextMeshPro.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/Unity.XR.ARFoundation.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/Unity.XR.ARSubsystems.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/Unity.XR.InteractionSubsystems.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/Unity.XR.Management.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/Unity.XR.OpenXR.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/Unity.XR.OpenXR.Features.ConformanceAutomation.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/Unity.XR.OpenXR.Features.MockDriver.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/Unity.XR.OpenXR.Features.MockRuntime.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/Unity.XR.OpenXR.Features.OculusQuestSupport.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/Unity.XR.OpenXR.Features.RuntimeDebugger.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/Unity.XR.WindowsMixedReality.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/UnityEngine.AIModule.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/UnityEngine.AndroidJNIModule.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/UnityEngine.AnimationModule.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/UnityEngine.ARModule.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/UnityEngine.AssetBundleModule.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/UnityEngine.AudioModule.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/UnityEngine.CoreModule.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/UnityEngine.DirectorModule.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/UnityEngine.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/UnityEngine.GridModule.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/UnityEngine.ImageConversionModule.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/UnityEngine.IMGUIModule.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/UnityEngine.InputLegacyModule.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/UnityEngine.InputModule.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/UnityEngine.JSONSerializeModule.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/UnityEngine.ParticleSystemModule.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/UnityEngine.Physics2DModule.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/UnityEngine.PhysicsModule.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/UnityEngine.SharedInternalsModule.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/UnityEngine.SpatialTracking.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/UnityEngine.SpriteShapeModule.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/UnityEngine.SubsystemsModule.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/UnityEngine.TerrainModule.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/UnityEngine.TextCoreModule.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/UnityEngine.TextRenderingModule.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/UnityEngine.TilemapModule.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/UnityEngine.UI.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/UnityEngine.UIElementsNativeModule.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/UnityEngine.UIModule.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/UnityEngine.UnityAnalyticsModule.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/UnityEngine.UnityWebRequestModule.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/UnityEngine.VFXModule.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/UnityEngine.VideoModule.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/UnityEngine.VRModule.dll",
+        "E:/Unity Projects/New SEOM/Temp/StagingArea/Data/Managed/UnityEngine.XRModule.dll"
+      ],
+      "Outputs": [
+        "E:/Unity Projects/New SEOM/Library/Il2cppBuildCache/UWP/ARM64/il2cppOutput/Data/Metadata/global-metadata.dat"
+      ],
+      "TargetDirectories": [],
+      "PassIndex": 0,
+      "Deps": [],
+      "OverwriteOutputs": false,
+      "FrontendResponseFiles": [],
+      "AllowUnexpectedOutput": true,
+      "AllowedOutputSubstrings": [],
+      "DebugActionIndex": 1
+    }
+  ],
+  "FileSignatures": [
+    {
+      "File": "../../../../Temp/StagingArea/Data/Managed"
+    },
+    {
+      "File": "artifacts/buildprogram/tundra_buildprogram.dag.json"
+    },
+    {
+      "File": "il2cpp_settings.json"
+    },
+    {
+      "File": "unitylinker_settings.json"
+    }
+  ],
+  "GlobSignatures": [
+    {
+      "Path": "../../../../Temp/StagingArea/Data/Managed"
+    }
+  ],
+  "ContentDigestExtensions": [
+    ".rsp",
+    ".dll",
+    ".exe",
+    ".txt",
+    ".c",
+    ".cpp",
+    ".h",
+    ".cs",
+    ".hpp"
+  ],
+  "StructuredLogFileName": "artifacts/tundra.log.json",
+  "StateFileName": "artifacts/TundraBuildState.state",
+  "StateFileNameTmp": "artifacts/TundraBuildState.state.tmp",
+  "ScanCacheFileName": "artifacts/tundra.scancache",
+  "ScanCacheFileNameTmp": "artifacts/tundra.scancache.tmp",
+  "DigestCacheFileName": "artifacts/tundra.digestcache",
+  "DigestCacheFileNameTmp": "artifacts/tundra.digestcache.tmp",
+        "NamedNodes": {
+          "all_tundra_nodes": 0
+        }
+,  "DefaultNodes": [
+    0
+  ],
+  "SharedResources": [],
+  "Scanners": [],
+  "Identifier": "artifacts/tundra.dag.json",
+  "BuildTitle": "Bee",
+  "RelativePathToRoot": ".."
+}
