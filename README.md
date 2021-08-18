@@ -12,13 +12,10 @@
                    
 ```
 　　　　　　
-#### 　　　　　　　　　　　　　　　　　　　　　　　　　　소중한 이와의 즐거웠던 이야기
 
-#### 　　　　　　　　　　　　　　　　　　　　　　　　　　소중한 이의 아름다운 흔적을
-
- 　　　　　　　　　　　　　　　　　　　　　　　　　　**기억의 섬**에서 간직해보세요.
-                           　　　　　　　　　
                            
-
+　　　　　　　　　　　　　　　　　　　　　　　　　<img src="https://user-images.githubusercontent.com/55572533/129946323-e75c4871-fb98-41a2-846e-24f9276e5e00.png" height="105px" width="230px">
+                 
 　　　　　　　　　　　　　　　　
+　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
 --------
