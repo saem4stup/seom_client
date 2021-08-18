@@ -14,7 +14,7 @@
 　　　　　　
 
                            
-　　　　　　　　　　　　　　　　　　　　　　　　<img src="https://user-images.githubusercontent.com/55572533/129946323-e75c4871-fb98-41a2-846e-24f9276e5e00.png" height="110px" width="240px">
+　　　　　　　　　　　　　　　　　　　　　　　　<img src="https://user-images.githubusercontent.com/55572533/129946323-e75c4871-fb98-41a2-846e-24f9276e5e00.png" height="120px" width="250px">
                  
 　　　　　　　　　　　　　　　　
 　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
