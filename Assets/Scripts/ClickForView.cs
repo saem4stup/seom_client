@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using TMPro;
 
 
 public class ClickForView : MonoBehaviour
@@ -38,4 +39,29 @@ public class ClickForView : MonoBehaviour
             button.GetComponent<SpriteRenderer>().sprite = unclicked_image;
         }
     }
+
+    public void withProfileButton()
+    {
+        if(view.activeSelf == true)
+        {
+            view.SetActive(false);
+            /*GameObject.Find("MySEOM").GetComponent<TextMeshProUGUI>().text = UserSEOMInfo.USERNAME + "님의 기억의 섬";*/
+            GameObject.Find("MapButton").GetComponent<SpriteRenderer>().sprite = clicked_image;
+            button.GetComponent<SpriteRenderer>().sprite = unclicked_image;
+            GameObject.Find("Background").transform.Find("Island").gameObject.SetActive(true);
+            GameObject.Find("BaseElements").transform.Find("Markers").gameObject.SetActive(true);
+
+        }
+        else
+        {
+            view.SetActive(true);
+            /*GameObject.Find("MySEOM").GetComponent<TextMeshProUGUI>().text = UserSEOMInfo.USERNAME + "님의 정보";*/
+            GameObject.Find("MapButton").GetComponent<SpriteRenderer>().sprite = unclicked_image;
+            button.GetComponent<SpriteRenderer>().sprite = clicked_image;
+            GameObject.Find("Island").SetActive(false);
+            GameObject.Find("Markers").SetActive(false);
+
+        }
+    }
+ 
 }

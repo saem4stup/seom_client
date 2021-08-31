@@ -194,6 +194,7 @@ GameObject:
   - component: {fileID: 1764373879276326146}
   - component: {fileID: 3677523910717860677}
   - component: {fileID: 6184796638981508643}
+  - component: {fileID: 2952831331910205336}
   m_Layer: 0
   m_Name: Delete
   m_TagString: Untagged
@@ -308,10 +309,35 @@ MonoBehaviour:
     - {fileID: 0}
   OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2952831331910205336}
+        m_TargetAssemblyTypeName: SetComfirmDeleteView, Assembly-CSharp
+        m_MethodName: writeConfirmDeleteView
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   Events: []
   resetOnDestroy: 0
   enabledOnStart: 1
+--- !u!114 &2952831331910205336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2805477381327014301}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d99d9245f0e0f5f4c82404b184d9c3ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ThisMarker: {fileID: 4318804883444384935}
 --- !u!1 &2914499492305676880
 GameObject:
   m_ObjectHideFlags: 0
@@ -860,8 +886,8 @@ MonoBehaviour:
   debounceThreshold: 0.01
   localForward: {x: -0, y: -0, z: -1}
   localUp: {x: 0, y: 1, z: 0}
-  localCenter: {x: 0, y: 0, z: 0}
-  bounds: {x: 0, y: 0}
+  localCenter: {x: -2.3244324, y: 42.0496, z: -0.02}
+  bounds: {x: 132.45258, y: 115.1992}
   touchableCollider: {fileID: 4318804883444384933}
 --- !u!1 &4485807522861670190
 GameObject:

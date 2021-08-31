@@ -934,8 +934,8 @@ MonoBehaviour:
   debounceThreshold: 0.01
   localForward: {x: -0, y: -0, z: -1}
   localUp: {x: 0, y: 1, z: 0}
-  localCenter: {x: 0, y: 0, z: 0}
-  bounds: {x: 0, y: 0}
+  localCenter: {x: -2.3244324, y: 42.0496, z: -0.02}
+  bounds: {x: 132.45258, y: 115.1992}
   touchableCollider: {fileID: 5581885316141811412}
 --- !u!1 &5581885316164959459
 GameObject:
@@ -1083,7 +1083,7 @@ GameObject:
   - component: {fileID: 7991071873645973363}
   - component: {fileID: 5012679786131171636}
   - component: {fileID: 2543798149427956818}
-  - component: {fileID: 3405826563604531295}
+  - component: {fileID: 557451435503413220}
   m_Layer: 0
   m_Name: Delete
   m_TagString: Untagged
@@ -1199,7 +1199,7 @@ MonoBehaviour:
   OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3405826563604531295}
+      - m_Target: {fileID: 557451435503413220}
         m_TargetAssemblyTypeName: ShowUnableToDeleteView, Assembly-CSharp
         m_MethodName: showView
         m_Mode: 1
@@ -1214,7 +1214,7 @@ MonoBehaviour:
   Events: []
   resetOnDestroy: 0
   enabledOnStart: 1
---- !u!114 &3405826563604531295
+--- !u!114 &557451435503413220
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
