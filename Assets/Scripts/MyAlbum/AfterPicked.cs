@@ -11,6 +11,7 @@ public class AfterPicked : MonoBehaviour
     {
         GameObject.Find("ProfilePhoto").GetComponent<Image>().sprite 
             = LastPickedThing.transform.Find("Photo").GetComponent<Image>().sprite;
+        GameObject.Find("Send2Server").GetComponent<NewBOGEUM2Server>().deceasedProfileImg = Application.dataPath + "/Resources/Images/MyAlbumPhoto/RealImages/" + LastPickedThing.GetComponent<SourcePath>().Path;
     }
 
 }

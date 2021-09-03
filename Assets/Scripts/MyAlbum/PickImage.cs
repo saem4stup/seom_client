@@ -8,7 +8,7 @@ public class PickImage : MonoBehaviour
     GameObject PickingButton;
     private void Start()
     {
-        PickingButton = GameObject.Find("MyAlbum").transform.Find("SelectButton").gameObject;
+        PickingButton = GameObject.Find("MyAlbum").transform.Find("View").transform.Find("SelectButton").gameObject;
     }
     public void NotifyImagePicked()
     {
