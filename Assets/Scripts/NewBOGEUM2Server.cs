@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
+using System.IO;
+using System;
 
 public class NewBOGEUM2Server : MonoBehaviour
 {
@@ -12,30 +14,33 @@ public class NewBOGEUM2Server : MonoBehaviour
     public string relation;
     public string deceasedProfileImg;
 
-    private string uri = "http://15.165.223.53:3000//main/v1/island";
+    private string uri = "http://15.165.223.53:3000/main/v1/island";
     
 
-    public void Start()
+    public void Send()
     {
         StartCoroutine(Upload());
     }
+
     IEnumerator Upload()
     {
-        WWWForm form = new WWWForm();
-        form.AddField("myField", "myData");
+        List<IMultipartFormSection> form = new List<IMultipartFormSection>();
+        byte[] image = File.ReadAllBytes(deceasedProfileImg);
 
-        using (UnityWebRequest www = UnityWebRequest.Post("https://www.my-server.com/myform", form))
+        form.Add(new MultipartFormDataSection("userIdx", System.Text.Encoding.UTF8.GetBytes((userIdx).ToString())));
+        form.Add(new MultipartFormDataSection("deceasedName", deceasedName));
+        form.Add(new MultipartFormDataSection("deceasedBirth", deceasedBirth));
+        form.Add(new MultipartFormDataSection("deceasedDeath", deceasedDeath));
+        form.Add(new MultipartFormDataSection("relation", relation));
+        form.Add(new MultipartFormFileSection("deceasedProfileImg", image, "deceasedImage.png", "image/png"));
+
+
+        using (UnityWebRequest www = UnityWebRequest.Post(uri, form))
         {
             yield return www.SendWebRequest();
-
-            if (www.result != UnityWebRequest.Result.Success)
-            {
-                Debug.Log(www.error);
-            }
-            else
-            {
-                Debug.Log("Form upload complete!");
-            }
+            String result = www.downloadHandler.text;
+            Debug.Log("°á°ú : " + result);
+           
         }
     }
 }

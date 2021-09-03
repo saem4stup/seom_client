@@ -1412,6 +1412,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2804570316869298952, guid: 49bc700aff10c414fa1738faac32051b, type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2804570316869298952, guid: 49bc700aff10c414fa1738faac32051b, type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2804570316869298952, guid: 49bc700aff10c414fa1738faac32051b, type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1021247279}
+    - target: {fileID: 2804570316869298952, guid: 49bc700aff10c414fa1738faac32051b, type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2804570316869298952, guid: 49bc700aff10c414fa1738faac32051b, type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Send
+      objectReference: {fileID: 0}
+    - target: {fileID: 2804570316869298952, guid: 49bc700aff10c414fa1738faac32051b, type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: NewBOGEUM2Server, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2804570316869298952, guid: 49bc700aff10c414fa1738faac32051b, type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 49bc700aff10c414fa1738faac32051b, type: 3}
 --- !u!4 &694998238 stripped
