@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using Newtonsoft.Json.Linq;
 using UnityEngine;
 using UnityEngine.Networking;
+using Newtonsoft.Json;
 
 [System.Serializable]
 public class RequestingResult
@@ -16,7 +18,7 @@ public class RequestingResult
 public class UserData
 {
     public string name;
-    public DeceasedInfo[] deceasedPeople;
+    public DeceasedInfo[] deceasedInfo;
 }
 [System.Serializable]
 public class DeceasedInfo
@@ -45,8 +47,11 @@ public class GetSEOMInfo : MonoBehaviour
         {
             // Request and wait for the desired page.
             yield return webRequest.SendWebRequest();
+            userData = JsonConvert.DeserializeObject<UserData>(webRequest.downloadHandler.text);
             RequestingResult requestingResult = JsonUtility.FromJson<RequestingResult>(webRequest.downloadHandler.text);
             userData = requestingResult.data;
+            Debug.Log(userData.deceasedInfo[0].deceasedName);
+       
         }
         
     }
