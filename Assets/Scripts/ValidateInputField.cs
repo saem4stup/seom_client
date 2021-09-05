@@ -53,7 +53,7 @@ public class ValidateInputField : MonoBehaviour
         {
             NewBOGEUM2Server infoBOGEUM = GameObject.Find("Send2Server").GetComponent<NewBOGEUM2Server>();
             infoBOGEUM.deceasedBirth = InputBirthText.GetComponent<TextMeshProUGUI>().text;
-            infoBOGEUM.deceasedBirth = InputDeathText.GetComponent<TextMeshProUGUI>().text;
+            infoBOGEUM.deceasedDeath = InputDeathText.GetComponent<TextMeshProUGUI>().text;
             infoBOGEUM.deceasedName = InputNameText.GetComponent<TextMeshProUGUI>().text;
             infoBOGEUM.relation = InputRelationText.GetComponent<TextMeshProUGUI>().text;
             GameObject.Find("WritesInfo").transform.Find("View").gameObject.SetActive(false);

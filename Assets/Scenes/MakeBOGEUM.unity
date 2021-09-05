@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465782, g: 0.49641252, b: 0.5748167, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1358,7 +1358,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2040516920907916449, guid: 49bc700aff10c414fa1738faac32051b, type: 3}
       propertyPath: m_Name
-      value: MapMenuButton
+      value: CompleteButton
       objectReference: {fileID: 0}
     - target: {fileID: 2040516920907916454, guid: 49bc700aff10c414fa1738faac32051b, type: 3}
       propertyPath: m_RootOrder
@@ -1414,10 +1414,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2804570316869298952, guid: 49bc700aff10c414fa1738faac32051b, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2804570316869298952, guid: 49bc700aff10c414fa1738faac32051b, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2804570316869298952, guid: 49bc700aff10c414fa1738faac32051b, type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2804570316869298952, guid: 49bc700aff10c414fa1738faac32051b, type: 3}
@@ -1425,7 +1429,15 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1021247279}
     - target: {fileID: 2804570316869298952, guid: 49bc700aff10c414fa1738faac32051b, type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 694998240}
+    - target: {fileID: 2804570316869298952, guid: 49bc700aff10c414fa1738faac32051b, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2804570316869298952, guid: 49bc700aff10c414fa1738faac32051b, type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2804570316869298952, guid: 49bc700aff10c414fa1738faac32051b, type: 3}
@@ -1433,11 +1445,23 @@ PrefabInstance:
       value: Send
       objectReference: {fileID: 0}
     - target: {fileID: 2804570316869298952, guid: 49bc700aff10c414fa1738faac32051b, type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: ChangeToMain
+      objectReference: {fileID: 0}
+    - target: {fileID: 2804570316869298952, guid: 49bc700aff10c414fa1738faac32051b, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
       value: NewBOGEUM2Server, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 2804570316869298952, guid: 49bc700aff10c414fa1738faac32051b, type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: ChangeScene, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 2804570316869298952, guid: 49bc700aff10c414fa1738faac32051b, type: 3}
       propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 2804570316869298952, guid: 49bc700aff10c414fa1738faac32051b, type: 3}
+      propertyPath: OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -1447,6 +1471,23 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2040516920907916454, guid: 49bc700aff10c414fa1738faac32051b, type: 3}
   m_PrefabInstance: {fileID: 694998237}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &694998239 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2040516920907916449, guid: 49bc700aff10c414fa1738faac32051b, type: 3}
+  m_PrefabInstance: {fileID: 694998237}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &694998240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 694998239}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 200385d421d50024f98e8e56787f153e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &699555324
 GameObject:
   m_ObjectHideFlags: 0
@@ -2800,11 +2841,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 01a598c88e81fff4393806e914ab2405, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  userIdx: 30
-  deceasedName: "\uAE40\uCCA0\uC218"
-  deceasedBirth: 1991.10.19
-  deceasedDeath: 2019.11.15
-  relation: "\uCE5C\uAD6C"
+  userIdx: 1
+  deceasedName: "\uAE40\uAE40\uAE40"
+  deceasedBirth: 0
+  deceasedDeath: 0
+  relation: "\uBB34\uC5B8\uAC00"
   deceasedProfileImg: 
 --- !u!1 &1022795830
 GameObject:

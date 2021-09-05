@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Networking;
 
 [System.Serializable]
-public class RequestingResult
+class RequestingResult
 {
     public string status;
     public bool success;
@@ -13,13 +13,13 @@ public class RequestingResult
 }
 
 [System.Serializable]
-public class UserData
+class UserData
 {
     public string name;
     public DeceasedInfo[] deceasedInfo;
 }
 [System.Serializable]
-public class DeceasedInfo
+class DeceasedInfo
 {
     public int islandIdx;
     public string deceasedName;
@@ -30,8 +30,8 @@ public class DeceasedInfo
 public class GetSEOMInfo : MonoBehaviour
 {
     private string uri = "http://15.165.223.53:3000/main/v1/";
-    public string user_idx = "";
-    public UserData userData; 
+    public int user_idx;
+    UserData userData; 
 
     public void Start()
     {     
@@ -49,5 +49,10 @@ public class GetSEOMInfo : MonoBehaviour
             userData = requestingResult.data;
         }
         
+    }
+    public void Awake()
+    {
+        // 해당 객체를 삭제되지 않게 해두기 --> 나중에 진호 dont destroy 객체 받으면 이부분은 지우기
+        DontDestroyOnLoad(GameObject.Find("SEOMInfo"));
     }
 }

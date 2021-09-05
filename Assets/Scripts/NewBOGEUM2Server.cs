@@ -16,7 +16,6 @@ public class NewBOGEUM2Server : MonoBehaviour
 
     private string uri = "http://15.165.223.53:3000/main/v1/island";
     
-
     public void Send()
     {
         StartCoroutine(Upload());
@@ -42,5 +41,9 @@ public class NewBOGEUM2Server : MonoBehaviour
             Debug.Log("°á°ú : " + result);
            
         }
+    }
+    private void Awake()
+    {
+        userIdx = GameObject.Find("SEOMInfo").GetComponent<GetSEOMInfo>().user_idx;
     }
 }
