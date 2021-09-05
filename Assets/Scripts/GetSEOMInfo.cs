@@ -16,7 +16,7 @@ public class RequestingResult
 public class UserData
 {
     public string name;
-    public DeceasedInfo[] deceasedPeople;
+    public DeceasedInfo[] deceasedInfo;
 }
 [System.Serializable]
 public class DeceasedInfo
