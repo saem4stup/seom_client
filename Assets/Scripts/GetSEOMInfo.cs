@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 using UnityEngine.UI;
+using TMPro;
 
 [System.Serializable]
 public class RequestingResult
@@ -53,7 +54,8 @@ public class GetSEOMInfo : MonoBehaviour
             userData = requestingResult.data;
         }
 
-        
+        /*사용자의 기억의 섬 제목 띄우기*/
+        GameObject.Find("MySEOM").GetComponent<TextMeshProUGUI>().text = userData.name + "님의 기억의 섬";
         StartCoroutine(GetBogeumProfileInfo()); // 사용자가 등록한 보금자리의 프로필 정보 얻어오기
     }
     IEnumerator GetBogeumProfileInfo()
