@@ -36,10 +36,7 @@ public class NewBOGEUM2Server : MonoBehaviour
 
         using (UnityWebRequest www = UnityWebRequest.Post(uri, form))
         {
-            yield return www.SendWebRequest();
-            String result = www.downloadHandler.text;
-            Debug.Log("°á°ú : " + result);
-           
+            yield return www.SendWebRequest();           
         }
     }
     private void Awake()
