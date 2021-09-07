@@ -101,6 +101,9 @@ public class GetBogeumInfo : MonoBehaviour
             yield return ImgWWW.SendWebRequest();
             bogeumImage.texture = ((DownloadHandlerTexture)ImgWWW.downloadHandler).texture;
 
+            DataSaver.instance.currBogeumidx = bogeumData.islandInfo[0].islandIdx.ToString();
+            //현재 보고 있는 보금자리의 idx를 인스턴스로 저장. DataSaver 스크립트에 변수 존재함
+
             bogeumName.text = bogeumData.islandInfo[0].deceasedName +" 님의 보금자리";
             bogeumBirthDeathDate.text = bogeumData.islandInfo[0].deceasedBirth + " ~ " + bogeumData.islandInfo[0].deceasedDeath;
             bogeumBookmarks.text = bogeumData.islandInfo[0].likes.ToString();

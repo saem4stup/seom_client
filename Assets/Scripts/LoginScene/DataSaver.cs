@@ -6,6 +6,8 @@ public class DataSaver : MonoBehaviour
 {
     public static DataSaver instance = null;
     public int userIdx;
+    public string currMemoryidx;
+    public string currBogeumidx;
     // Start is called before the first frame update
     private void Awake()
     {
