@@ -503,6 +503,7 @@ GameObject:
   - component: {fileID: 226169105580525714}
   - component: {fileID: 226169105580525724}
   - component: {fileID: 226169105580525715}
+  - component: {fileID: 5907527833450966882}
   m_Layer: 0
   m_Name: SearchResultElement
   m_TagString: Untagged
@@ -574,6 +575,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5907527833450966882
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 226169105580525713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8181170e26dc8af4e873ea650f912b30, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bogeumIdx: -1
 --- !u!1 &226169105587035507
 GameObject:
   m_ObjectHideFlags: 0

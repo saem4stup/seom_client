@@ -117,7 +117,7 @@ public class GetSEOMInfo : MonoBehaviour
         }
     }
 
-    Sprite Texture2Sprite(Texture texture)
+    public static Sprite Texture2Sprite(Texture texture)
     {
         Texture2D texture2D = Texture2D.CreateExternalTexture(texture.width, texture.height, TextureFormat.RGB24, false, false, texture.GetNativeTexturePtr());
         Rect rect = new Rect(0, 0, texture.width, texture.height);
