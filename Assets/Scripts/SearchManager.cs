@@ -64,14 +64,26 @@ public class SearchManager : MonoBehaviour
     private List<SearchElementInfo> searchData;
     private List<GameObject> SearchElementsObjects;
 
-    
+    public void CleanElements()
+    {
+        for(int i = 0; SearchElementsObjects!=null && i < SearchElementsObjects.Count; i++)
+        {
+            Destroy(SearchElementsObjects[i]);
+        }
+        if(searchData != null)
+            searchData.Clear();
+        if(SearchElementsObjects!=null)
+            SearchElementsObjects.Clear();
+    }
     public void Researching()
     {
         StartCoroutine(GetSearchResults());
     }
     IEnumerator GetSearchResults()
     {
+        CleanElements();
         string name = GameObject.Find("SearchResultWindow").transform.Find("MRKeyboardInputField_TMP").GetComponent<TMP_InputField>().text;
+        SearchRequestingResult requestingResult;
         /*검색 결과를 서버에서 가져오기*/
         // name = WWW.EscapeURL(name, System.Text.Encoding.UTF8);
         string uri = this.uri + name;
@@ -81,12 +93,20 @@ public class SearchManager : MonoBehaviour
             yield return webRequest.SendWebRequest();
             Debug.Log(uri);
             Debug.Log(webRequest.downloadHandler.text);
-            SearchRequestingResult requestingResult = JsonUtility.FromJson<SearchRequestingResult>(webRequest.downloadHandler.text);
+            requestingResult = JsonUtility.FromJson<SearchRequestingResult>(webRequest.downloadHandler.text);
             searchData = requestingResult.data;
         }
-
-        /*서버에서 각 프로필 사진 가져오기*/
-        StartCoroutine(GetSearchProfileInfo());
+        if(requestingResult.message == "섬 검색하기 성공")
+        {
+            /*서버에서 각 프로필 사진 가져오기*/
+            StartCoroutine(GetSearchProfileInfo());
+        }
+        else
+        {
+            /*검색 결과 없음*/
+            GameObject.Find("SearchResultWindow").SetActive(false);
+            GameObject.Find("AdditionalViews").transform.Find("BogeumDosntExist").gameObject.SetActive(true);
+        }
     }
 
     IEnumerator GetSearchProfileInfo()
