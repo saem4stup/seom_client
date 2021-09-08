@@ -139,5 +139,6 @@ public class GetSEOMInfo : MonoBehaviour
     {
         // 해당 객체를 삭제되지 않게 해두기 --> 나중에 진호 dont destroy 객체 받으면 이부분은 지우기
         DontDestroyOnLoad(GameObject.Find("SEOMInfo"));
+        user_idx = GameObject.Find("DataSaver").transform.GetComponent<DataSaver>().userIdx;
     }
 }
