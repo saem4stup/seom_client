@@ -16,19 +16,26 @@ public class MyBogeumjari : MonoBehaviour
     public bool hasMarker;
     static Vector3[] marker_position = new Vector3[5] { new Vector3(320.0f, 80.0f, 0.0f), new Vector3(114.0f, 112.0f, 0.0f), new Vector3(-64.0f, 142.0f, 0.0f), new Vector3(-219.0f, 46.0f, 0.0f), new Vector3(-373.0f, -238.0f, 0.0f) };
 
+    private GameObject myPrefab;
     public GameObject list_element;
     public GameObject marker;
 
+    public void sendBogeumIdx()//방문하기 클릭 시
+    {
+        DataSaver.instance.currBogeumidx = GetComponent<BogeumIdx>().bogeumIdx.ToString();
+    }
+    
     private GameObject MakeListElement()
     {
         GameObject lst_element_prefab;
 
         if (madeByMyself)
-            lst_element_prefab = Resources.Load("Prefabs/ListElementBOGEUMMine") as GameObject;
+            lst_element_prefab = Resources.Load<GameObject>("Prefabs/ListElementBOGEUMMine") as GameObject;
+        //lst_element_prefab = Resources.Load("Prefabs/ListElementBOGEUMMine") as GameObject;
         else
-            lst_element_prefab = Resources.Load("Prefabs/ListElementBOGEUMOthers") as GameObject;
+            lst_element_prefab = Resources.Load<GameObject>("Prefabs/ListElementBOGEUMOthers") as GameObject;
         
-        GameObject element = PrefabUtility.InstantiatePrefab(lst_element_prefab) as GameObject;
+        GameObject element = Instantiate(lst_element_prefab) as GameObject;
         element.transform.localScale = new Vector3(0.001f, 0.001f, 0.001f);
 
         element.transform.Find("Name").GetComponent<TextMeshProUGUI>().text = bogeumName; // 이름 세팅
@@ -45,7 +52,7 @@ public class MyBogeumjari : MonoBehaviour
     {
         GameObject marker_prefab;
         marker_prefab = Resources.Load("Prefabs/MarkerMine") as GameObject; // 프리팹으로 굽기
-        GameObject marker = PrefabUtility.InstantiatePrefab(marker_prefab) as GameObject;
+        GameObject marker =Instantiate(marker_prefab) as GameObject;
         marker.transform.parent = null;
         marker.transform.localScale = new Vector3(0.001f, 0.001f, 0.001f);
         // 일부는 마커로도 추가
@@ -67,6 +74,7 @@ public class MyBogeumjari : MonoBehaviour
         this.madeByMyself = madeByMyself;
         profileImage = profileImageTexture;
         idx = seomIdx;
+        DataSaver.instance.currBogeumidx = seomIdx.ToString();
         if(bogeumListIdx< marker_position.Length)
         {
             hasMarker = true;
@@ -78,5 +86,6 @@ public class MyBogeumjari : MonoBehaviour
         list_element = MakeListElement();
         marker = MakeMarker(bogeumListIdx);
         marker.GetComponent<BogeumIdx>().bogeumIdx = idx;
+ 
     }
 }

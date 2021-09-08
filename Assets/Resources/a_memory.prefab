@@ -14,6 +14,8 @@ GameObject:
   - component: {fileID: 2760406274578905002}
   - component: {fileID: 2407052835856032128}
   - component: {fileID: 3112757313030500434}
+  - component: {fileID: 1291966586698899328}
+  - component: {fileID: 881077557161572734}
   m_Layer: 5
   m_Name: Img_Button
   m_TagString: Untagged
@@ -183,6 +185,63 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
+--- !u!114 &1291966586698899328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13612157959548501}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1410eac1ae94b4d4492a09cc368e152c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  states: {fileID: 11400000, guid: 5eac1712038236e4b8ffdb3893804fe1, type: 2}
+  InputActionId: 0
+  isGlobal: 0
+  Dimensions: 1
+  dimensionIndex: 0
+  startDimensionIndex: 0
+  CanSelect: 1
+  CanDeselect: 1
+  VoiceCommand: 
+  voiceRequiresFocus: 1
+  profiles:
+  - Target: {fileID: 0}
+    Themes:
+    - {fileID: 0}
+  OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 2829746818739117513}
+        m_TargetAssemblyTypeName: ShowDetailMemory, Assembly-CSharp
+        m_MethodName: start_showMemory
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  Events: []
+  resetOnDestroy: 0
+  enabledOnStart: 1
+--- !u!65 &881077557161572734
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 13612157959548501}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 392, y: 292, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &2049527560301304727
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,12 +294,39 @@ MonoBehaviour:
   user_idx: 30
   island_idx: 16
   memoryInfo:
-    contentsIdx: 0
+  - contentsIdx: 0
     contentsImg: 
     createDate: 
     memo: 
     likes: 0
+    isAlreadyLikes: 0
+  - contentsIdx: 0
+    contentsImg: 
+    createDate: 
+    memo: 
+    likes: 0
+    isAlreadyLikes: 0
+  - contentsIdx: 0
+    contentsImg: 
+    createDate: 
+    memo: 
+    likes: 0
+    isAlreadyLikes: 0
+  - contentsIdx: 0
+    contentsImg: 
+    createDate: 
+    memo: 
+    likes: 0
+    isAlreadyLikes: 0
+  - contentsIdx: 0
+    contentsImg: 
+    createDate: 
+    memo: 
+    likes: 0
+    isAlreadyLikes: 0
   detailMemoryImg: {fileID: 0}
+  fullHeart: {fileID: 0}
+  blankHeart: {fileID: 0}
   detailMemoryDate: {fileID: 0}
   detailMemoryMemo: {fileID: 0}
   detailMemoryLikes: {fileID: 0}

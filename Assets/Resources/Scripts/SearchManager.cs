@@ -141,7 +141,7 @@ public class SearchManager : MonoBehaviour
     GameObject MakeSearchElement(SearchElementInfo info)
     {
         GameObject element_prefab = Resources.Load("Prefabs/SearchResultElement") as GameObject;
-        GameObject element = PrefabUtility.InstantiatePrefab(element_prefab) as GameObject;
+        GameObject element = Instantiate(element_prefab) as GameObject;
         element.transform.localScale = new Vector3(0.001f, 0.001f, 0.001f);
         element.transform.localPosition = new Vector3(0f, 0f, 0f);
 

@@ -602,6 +602,61 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &5305339987051863623
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3651710436050701902}
+  - component: {fileID: 524037382752858164}
+  m_Layer: 5
+  m_Name: GetBogeumInfo
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &3651710436050701902
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5305339987051863623}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5581885316141811413}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &524037382752858164
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5305339987051863623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee2bed8608d811e44aa748f66c42e0ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bogeumName: 
+  madeByMyself: 0
+  profileImage: {fileID: 0}
+  idx: 0
+  hasMarker: 0
+  list_element: {fileID: 0}
+  marker: {fileID: 0}
 --- !u!1 &5581885314310531524
 GameObject:
   m_ObjectHideFlags: 0
@@ -831,6 +886,8 @@ GameObject:
   - component: {fileID: 1968323333565922065}
   - component: {fileID: 2462954801631661655}
   - component: {fileID: 1759913133653080}
+  - component: {fileID: 1609136120795127693}
+  - component: {fileID: 2749020371866623045}
   m_Layer: 5
   m_Name: MarkerMine
   m_TagString: Untagged
@@ -854,6 +911,8 @@ RectTransform:
   - {fileID: 5581885315827434213}
   - {fileID: 3080413626885086288}
   - {fileID: 3672607001093845526}
+  - {fileID: 3651710436050701902}
+  - {fileID: 4918878858149576175}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -916,6 +975,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 5581885316141811414}
+        m_TargetAssemblyTypeName: ClickForView, Assembly-CSharp
+        m_MethodName: 
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: 
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   Events: []
   resetOnDestroy: 0
   enabledOnStart: 1
@@ -951,6 +1022,49 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bogeumIdx: 0
+--- !u!114 &1609136120795127693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5581885316141811414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3ce6c87682d269640a51cf009bc7962a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  user_idx: 30
+  island_idx: 16
+  bogeumData:
+    islandInfo: []
+    contentsInfo: []
+  bogeumName: {fileID: 0}
+  bogeumBirthDeathDate: {fileID: 0}
+  bogeumBookmarks: {fileID: 0}
+  fullStar: {fileID: 0}
+  blankStar: {fileID: 0}
+  parent_content: {fileID: 0}
+  bogeumImage: {fileID: 0}
+--- !u!114 &2749020371866623045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5581885316141811414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee2bed8608d811e44aa748f66c42e0ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  bogeumName: 
+  madeByMyself: 0
+  profileImage: {fileID: 0}
+  idx: 0
+  hasMarker: 0
+  list_element: {fileID: 0}
+  marker: {fileID: 0}
 --- !u!1 &5581885316164959459
 GameObject:
   m_ObjectHideFlags: 0
@@ -1374,6 +1488,49 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &9049164458192631847
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4918878858149576175}
+  - component: {fileID: 8389712113431033991}
+  m_Layer: 0
+  m_Name: SceneManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4918878858149576175
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9049164458192631847}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 273.7977, y: 22.990677, z: -108.59056}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5581885316141811413}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8389712113431033991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9049164458192631847}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb83143bb41319248b25c9e6aa77e2ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9074817104400107385
 GameObject:
   m_ObjectHideFlags: 0
@@ -1470,7 +1627,7 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 87, y: 25, z: 0.02}
+  m_Size: {x: 87, y: 25, z: 0.1}
   m_Center: {x: 0, y: 0, z: -0.01}
 --- !u!114 &3010022944148211810
 MonoBehaviour:
@@ -1500,7 +1657,55 @@ MonoBehaviour:
     - {fileID: 0}
   OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 0}
+        m_TargetAssemblyTypeName: GetBogeumInfo, Assembly-CSharp
+        m_MethodName: starttestGET
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 2749020371866623045}
+        m_TargetAssemblyTypeName: MyBogeumjari, Assembly-CSharp
+        m_MethodName: sendBogeumIdx
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1609136120795127693}
+        m_TargetAssemblyTypeName: GetBogeumInfo, Assembly-CSharp
+        m_MethodName: starttestGET
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 8389712113431033991}
+        m_TargetAssemblyTypeName: SceneChanger, Assembly-CSharp
+        m_MethodName: LoadPageScene
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   Events: []
   resetOnDestroy: 0
   enabledOnStart: 1
