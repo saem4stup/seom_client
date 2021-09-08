@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 0
     path: 
     guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/MakeBOGEUM.unity
+    guid: 76120fb039ae60a44b8c6b5bfea6faeb
   m_configObjects:
     Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 725b199b7ae580942b3a0f1e3e584782, type: 2}
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 8dd8331ed71153f4d96340b137ba6e4f, type: 2}

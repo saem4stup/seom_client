@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 using UnityEngine;
@@ -15,6 +15,12 @@ public class ChangeScene : MonoBehaviour
         SceneManager.LoadScene("Login");
         Debug.Log("SceneLoaded");
     }
-
-
+    public void ChangeToMakeBOGEUM()
+    {
+        SceneManager.LoadScene("MakeBOGEUM");
+    }
+    public void ChangeToMain()
+    {
+        SceneManager.LoadScene("Main");
+    }
 }

@@ -63,5 +63,18 @@ public class ClickForView : MonoBehaviour
 
         }
     }
+    public void withSearchButton()
+    {
+        if (view.activeSelf == true)
+        {
+            view.SetActive(false); // 뷰 닫힘
+            GameObject.Find("BaseElements").transform.Find("Markers").gameObject.SetActive(true); // 마커 보임
+        }
+        else
+        {
+            view.SetActive(true); // 뷰 열림
+            GameObject.Find("Markers").SetActive(false);
+        }
+    }
  
 }
