@@ -2080,7 +2080,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7129087943163446b78052122725e7a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  userIdx: 0
+  userIdx: 30
   currMemoryidx: 
   currBogeumidx: 
 --- !u!4 &1654267477

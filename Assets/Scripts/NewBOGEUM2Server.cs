@@ -41,6 +41,6 @@ public class NewBOGEUM2Server : MonoBehaviour
     }
     private void Awake()
     {
-        userIdx = GameObject.Find("SEOMInfo").GetComponent<GetSEOMInfo>().user_idx;
+        userIdx = DataSaver.instance.userIdx;
     }
 }
