@@ -61,6 +61,7 @@ public class PostMemory : MonoBehaviour
         form.Add(new MultipartFormDataSection("memo", System.Text.Encoding.UTF8.GetBytes(memoContent.text)));
 
         UnityWebRequest request = UnityWebRequest.Post(url + newMemoryURL, form);
+        request.chunkedTransfer = false;
         yield return request.SendWebRequest();
         string result = request.downloadHandler.text;
         Debug.Log("°á°ú : " + result);

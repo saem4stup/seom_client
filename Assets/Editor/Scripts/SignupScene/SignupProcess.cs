@@ -210,6 +210,7 @@ public class SignupProcess : MonoBehaviour
         form.Add(new MultipartFormFileSection("profileImg", path, "UserImg.png", "image/png"));
 
         UnityWebRequest request = UnityWebRequest.Post(url + signupURL, form);
+        request.chunkedTransfer = false;
         yield return request.SendWebRequest();
         string result = request.downloadHandler.text;
         Debug.Log("결과 : " + result);
@@ -228,6 +229,7 @@ public class SignupProcess : MonoBehaviour
         form.AddField("id", signupID.text);
 
         UnityWebRequest request = UnityWebRequest.Post(url + check_id_URL, form);
+        request.chunkedTransfer = false;
         yield return request.SendWebRequest();
         string result = request.downloadHandler.text;
         if (result.Contains("이미"))

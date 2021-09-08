@@ -91,6 +91,7 @@ public class SearchManager : MonoBehaviour
 
         using (UnityWebRequest webRequest = UnityWebRequest.Get(uri))
         {
+            webRequest.chunkedTransfer = false;
             yield return webRequest.SendWebRequest();
             Debug.Log(uri);
             Debug.Log(webRequest.downloadHandler.text);
@@ -119,6 +120,7 @@ public class SearchManager : MonoBehaviour
                string image_url = searchData[i].getImageURL();
             using (UnityWebRequest webRequest = UnityWebRequestTexture.GetTexture(image_url))
             {
+                webRequest.chunkedTransfer = false;
                 yield return webRequest.SendWebRequest();
                 textures[i] = ((DownloadHandlerTexture)webRequest.downloadHandler).texture;
             }

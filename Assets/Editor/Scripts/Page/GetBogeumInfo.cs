@@ -90,6 +90,7 @@ public class GetBogeumInfo : MonoBehaviour
         using (UnityWebRequest webRequest = UnityWebRequest.Get(uri))
         {
             // Request and wait for the desired page.
+            webRequest.chunkedTransfer = false;
             yield return webRequest.SendWebRequest();
             //bogeumData = JsonConvert.DeserializeObject<BogeumData>(webRequest.downloadHandler.text);
             RequestingResult_Bogeum requestingResult = JsonUtility.FromJson<RequestingResult_Bogeum>(webRequest.downloadHandler.text);
@@ -97,6 +98,7 @@ public class GetBogeumInfo : MonoBehaviour
             Debug.Log(webRequest.downloadHandler.text);
             
             UnityWebRequest ImgWWW = UnityWebRequestTexture.GetTexture(bogeumData.islandInfo[0].deceasedProfileImg);
+            ImgWWW.chunkedTransfer = false;
             yield return ImgWWW.SendWebRequest();
             bogeumImage.texture = ((DownloadHandlerTexture)ImgWWW.downloadHandler).texture;
 
@@ -131,6 +133,7 @@ public class GetBogeumInfo : MonoBehaviour
                     tmp.transform.GetChild(0).transform.GetChild(1).GetComponent<TextMeshProUGUI>().text = bogeumData.contentsInfo[i].commentCount.ToString();
                     tmp.transform.GetChild(3).GetComponent<ContentIdx>().thisIdx = bogeumData.contentsInfo[i].contentsIdx;
                     UnityWebRequest ContentsImgwww = UnityWebRequestTexture.GetTexture(bogeumData.contentsInfo[i].contentsImg);
+                    ContentsImgwww.chunkedTransfer = false;
                     yield return ContentsImgwww.SendWebRequest();
                     tmp.transform.GetChild(2).transform.GetChild(0).GetComponent<RawImage>().texture= ((DownloadHandlerTexture)ContentsImgwww.downloadHandler).texture;
                     //memoryArray.Add(tmp);

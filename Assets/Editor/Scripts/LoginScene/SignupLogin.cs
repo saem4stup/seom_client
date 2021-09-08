@@ -90,6 +90,7 @@ public class SignupLogin : MonoBehaviour
         form.Add(new MultipartFormFileSection("profileImg",path,"TestImg.png","image/png"));
         
         UnityWebRequest request = UnityWebRequest.Post(url + signupURL, form);
+        request.chunkedTransfer = false;
         yield return request.SendWebRequest();
         String result = request.downloadHandler.text;
         Debug.Log("결과 : "+result);
@@ -106,7 +107,7 @@ public class SignupLogin : MonoBehaviour
         form.AddField("id", "9999");
         form.AddField("password", "9999");
         UnityWebRequest request = UnityWebRequest.Post(url + signinURL, form);
-
+        request.chunkedTransfer = false;
         yield return request.SendWebRequest();
         String result = request.downloadHandler.text;
        

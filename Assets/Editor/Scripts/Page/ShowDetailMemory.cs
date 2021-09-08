@@ -70,6 +70,7 @@ public class ShowDetailMemory : MonoBehaviour
 
         using (UnityWebRequest memoryRequest = UnityWebRequest.Get(tmpUri))
         {
+            memoryRequest.chunkedTransfer = false;
             yield return memoryRequest.SendWebRequest();
             RequestingResult_Memory resultMemory = JsonUtility.FromJson<RequestingResult_Memory>(memoryRequest.downloadHandler.text);
             //memoryParent = resultMemory.data;
@@ -78,6 +79,7 @@ public class ShowDetailMemory : MonoBehaviour
             //Debug.Log(resultMemory.data);
             
             UnityWebRequest MemoryImgwww = UnityWebRequestTexture.GetTexture(memoryInfo[0].contentsImg);
+            MemoryImgwww.chunkedTransfer = false;
             yield return MemoryImgwww.SendWebRequest();
             detailMemoryImg.GetComponent<RawImage>().texture = ((DownloadHandlerTexture)MemoryImgwww.downloadHandler).texture;
 

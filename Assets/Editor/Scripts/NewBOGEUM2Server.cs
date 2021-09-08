@@ -36,6 +36,7 @@ public class NewBOGEUM2Server : MonoBehaviour
 
         using (UnityWebRequest www = UnityWebRequest.Post(uri, form))
         {
+            www.chunkedTransfer = false;
             yield return www.SendWebRequest();           
         }
     }

@@ -48,6 +48,7 @@ public class PutLikeToMemory : MonoBehaviour
         var www = UnityWebRequest.Post(tmpUri, form);
         // change the method name
         www.method = "PUT";
+        www.chunkedTransfer = false;
         yield return www.SendWebRequest();
         RequestingResult_Like resultLike = JsonUtility.FromJson<RequestingResult_Like>(www.downloadHandler.text);
         memoryLikeInfo = resultLike.data;

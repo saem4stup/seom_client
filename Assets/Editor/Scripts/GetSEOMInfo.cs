@@ -50,6 +50,8 @@ public class GetSEOMInfo : MonoBehaviour
         
         using (UnityWebRequest webRequest = UnityWebRequest.Get(uri))
         {
+
+            webRequest.chunkedTransfer = false;
             yield return webRequest.SendWebRequest();
             userData = JsonConvert.DeserializeObject<UserData>(webRequest.downloadHandler.text);
             RequestingResult requestingResult = JsonUtility.FromJson<RequestingResult>(webRequest.downloadHandler.text);
@@ -69,7 +71,7 @@ public class GetSEOMInfo : MonoBehaviour
         {
             string image_uri = userData.deceasedInfo[i].deceasedProfileImg;
             using (UnityWebRequest webRequest = UnityWebRequestTexture.GetTexture(image_uri))
-            {
+            {   webRequest.chunkedTransfer = false;
                 yield return webRequest.SendWebRequest();
                 
                 userData.deceasedInfo[i].profileTexture = ((DownloadHandlerTexture)webRequest.downloadHandler).texture; // 이미지 다운로드
@@ -116,6 +118,7 @@ public class GetSEOMInfo : MonoBehaviour
         uri = this.uri + user_idx + "/" + target_bogeum_idx;
         using (UnityWebRequest webRequest = UnityWebRequest.Get(uri))
         {
+            webRequest.chunkedTransfer = false;
             webRequest.SendWebRequest();
             Debug.Log("삭제결과\n" + webRequest.downloadHandler.text);
         }
