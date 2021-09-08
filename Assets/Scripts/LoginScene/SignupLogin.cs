@@ -109,8 +109,11 @@ public class SignupLogin : MonoBehaviour
 
         yield return request.SendWebRequest();
         String result = request.downloadHandler.text;
-        Debug.Log("결과 : " + result);
-        //Debug.Log(request.responseCode);
+       
+        // userIdx만 파싱
+        int useridx_index = result.IndexOf("userIdx") + 9;
+        GameObject.Find("DataSaver").transform.GetComponent<DataSaver>().userIdx = Convert.ToInt32(result.Substring(useridx_index, 2));
+        
         if (request.responseCode == 200)
         {
             SceneManager.LoadScene("Main");
