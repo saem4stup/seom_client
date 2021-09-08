@@ -63,20 +63,21 @@ public class SearchManager : MonoBehaviour
     private string uri = "http://15.165.223.53:3000/main/v1/island?deceased_name=";
     private List<SearchElementInfo> searchData;
     private List<GameObject> SearchElementsObjects;
-
     public void CleanElements()
     {
         for(int i = 0; SearchElementsObjects!=null && i < SearchElementsObjects.Count; i++)
         {
             Destroy(SearchElementsObjects[i]);
         }
-        if(searchData != null)
+        
+        if (searchData != null)
             searchData.Clear();
         if(SearchElementsObjects!=null)
             SearchElementsObjects.Clear();
     }
     public void Researching()
     {
+        SearchElementsObjects = new List<GameObject>();
         StartCoroutine(GetSearchResults());
     }
     IEnumerator GetSearchResults()
@@ -155,6 +156,8 @@ public class SearchManager : MonoBehaviour
 
         element.transform.parent = transform.Find("Result").transform.Find("Viewport").transform.Find("Content").transform;
         element.transform.localPosition = new Vector3(0f, 0f, 0f);
+
+        element.transform.GetComponent<BogeumIdx>().bogeumIdx = info.islandIdx;
         return element;
     }
 }

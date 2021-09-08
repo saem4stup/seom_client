@@ -124,6 +124,13 @@ public class GetSEOMInfo : MonoBehaviour
         return Sprite.Create(texture2D, rect, new Vector2(0.5f, 0.5f));
     }
 
+    private void SetProfile()
+    {
+        GameObject profileView = GameObject.Find("AdditionalViews").transform.Find("ProfileView").gameObject;
+        profileView.transform.Find("Text").transform.Find("Username").transform.GetComponent<TextMeshProUGUI>().text = userData.name;
+
+    }
+
     public void Awake()
     {
         // 해당 객체를 삭제되지 않게 해두기 --> 나중에 진호 dont destroy 객체 받으면 이부분은 지우기
