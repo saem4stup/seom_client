@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Login.unity
+    guid: 81b1b7cc6e63aea4b8bcd48ffe61de7c
+  - enabled: 1
+    path: Assets/Scenes/Signup.unity
+    guid: fcaf2c1e1d838b54fbde22607f3806d7
+  - enabled: 1
+    path: Assets/Scenes/Main.unity
+    guid: 627e9eef78ae2e344908ed8f4ac7fcb3
+  - enabled: 0
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 1
+    path: Assets/Scenes/MakeBOGEUM.unity
+    guid: 76120fb039ae60a44b8c6b5bfea6faeb
+  - enabled: 1
+    path: Assets/Scenes/Page.unity
+    guid: 740d657208651814db22ffd51a9ada7a
+  m_configObjects:
+    Unity.XR.WindowsMR.Settings: {fileID: 11400000, guid: 725b199b7ae580942b3a0f1e3e584782, type: 2}
+    com.unity.xr.management.loader_settings: {fileID: 11400000, guid: 8dd8331ed71153f4d96340b137ba6e4f, type: 2}
+    com.unity.xr.openxr.settings4: {fileID: 11400000, guid: 92a04b7fe20a5b147a3ea7758c5c279c, type: 2}
